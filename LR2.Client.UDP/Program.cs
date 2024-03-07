@@ -3,9 +3,9 @@ using System.Net.Sockets;
 using System.Text;
 
 var client = new UdpClient();
-var serverEndpoint = new IPEndPoint(IPAddress.Loopback, 8001);
+var serverEndpoint = new IPEndPoint(IPAddress.Loopback, 9001);
 
-var message = "1,2,3,4,5"; // Пример массива чисел
+var message = "1,2,3,4,5";
 var bytesToSend = Encoding.UTF8.GetBytes(message);
 Console.WriteLine($"Sending: {message}");
 
