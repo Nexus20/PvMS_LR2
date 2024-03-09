@@ -3,7 +3,7 @@ using System.Net.Sockets;
 using System.Text;
 
 const int port = 9001;
-const int clientCount = 5000;
+const int clientCount = 100000;
 
 var tasks = new List<Task>();
 for (var i = 0; i < clientCount; i++)
